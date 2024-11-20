@@ -3,6 +3,15 @@ use std::{cmp::Ordering, intrinsics::mir::Len, io};
 use rand::Rng;
 
 fn main() {
+    let awesome = {
+        let temporar = 123;
+        let takeme = { 1 };
+        temporar + takeme; // just op
+        temporar + takeme // ret
+    };
+}
+
+fn main3() {
     const test_const: u32 = 2 * 1;
     let seq = 213;
 
@@ -23,7 +32,7 @@ fn main() {
 
     let accidx = tup.0;
 
-    let thisislist = ["typeorval";5];
+    let thisislist = ["typeorval"; 5];
 }
 
 fn main2() {
