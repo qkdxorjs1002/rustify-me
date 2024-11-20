@@ -7,13 +7,23 @@ fn main() {
     let seq = 213;
 
     {
-        // let test_const = "same?"
-        // const test_const = 1231;
+        // let test_const = "same?"; err
+        // const test_const = 1231; err
         let seq = 3213;
     }
 
     let immustr = "132";
     let immustr = immustr.len();
+
+    let parsed = "123123".parse::<u32>().expect("err");
+    let parsed = "123123".parse::<i32>().expect("err");
+
+    let tup: (u32, i32, f32) = (1, 1, 1.0);
+    let (bu, n, hae) = tup;
+
+    let accidx = tup.0;
+
+    let thisislist = ["typeorval";5];
 }
 
 fn main2() {
