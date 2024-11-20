@@ -1,8 +1,22 @@
-use std::{cmp::Ordering, io};
+use std::{cmp::Ordering, intrinsics::mir::Len, io};
 
 use rand::Rng;
 
 fn main() {
+    const test_const: u32 = 2 * 1;
+    let seq = 213;
+
+    {
+        // let test_const = "same?"
+        // const test_const = 1231;
+        let seq = 3213;
+    }
+
+    let immustr = "132";
+    let immustr = immustr.len();
+}
+
+fn main2() {
     let rannum: u32 = rand::thread_rng().gen_range(1..=10);
     loop {
         println!("Input: ");
