@@ -9,6 +9,17 @@ fn main() {
         temporar + takeme; // just op
         temporar + takeme // ret
     };
+
+    let pyrust = if awesome > 0 { 1 } else { 0 };
+
+    'loop1: loop {
+        'loop2: loop {
+            break 'loop1;
+            'ambi: loop {
+                break;
+            }
+        }
+    }
 }
 
 fn main3() {
